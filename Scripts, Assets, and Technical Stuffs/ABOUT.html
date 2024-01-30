@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--   --------mark of section-------   -->
+    <title>JCC - ABOUT US</title>
+
+<!--   --------mark of section-------   -->
+    <link rel="stylesheet" href="./ABOUTStyle.css" />
+
+<!--   --------mark of section-------   -->    
+<link rel="icon" href="./assets/logo.png">
+
+  </head>
+  <body>
+
+<!--   --------mark of section-------   -->
+    <nav class="nav">
+
+      <div class="nav-contents">
+
+        <div class="nav-menu">
+          <a href="./HOME.html" class="H">HOME</a>
+          <a href="./EVENTS.html" class="E">EVENTS</a>
+          <a href="./PRICELIST.html" class="P">PRICE LIST</a>
+          <a href="./ABOUT.html" class="A">ABOUT US</a>
+          <a href="./CONTACT.html" class="C">CONTACT US</a>
+        </div>
+
+        <div class="nav-line">          
+        </div>
+
+      </div>
+
+    </nav>
+    <nav class="mobile-nav">
+      <img src="./assets/COOL LOGO - mobile.png" alt="">
+      <div id="menuToggle">
+        <input type="checkbox" />
+
+        <!-- the three lines -->
+        <div class="three-line">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <ul id="menu">
+          <li><a href="./HOME.html" class="H">HOME</a></li>
+          <li><a href="./EVENTS.html" class="E">EVENTS</a></li>
+          <li><a href="./PRICELIST.html" class="P">PRICE LIST</a></li>
+          <li><a href="./ABOUT.html" class="A">ABOUT US</a></li>
+          <li><a href="./CONTACT.html" class="C">CONTACT US</a></li>
+        </ul>
+      </div> 
+      <div class="nav-line">          
+      </div>     
+    </nav>
+
+<!--   --------mark of section-------   -->
+  <div class="home0">
+    <div class="title1">Let History</div>
+    <br>
+    <div class="title2">explains it all.</div>
+  </div>
+
+<!--   --------mark of section-------   -->
+    <div class="home2">
+      <div class="title1">1974.</div>
+      <div class="title2">it all begins.</div>
+
+      <div class="wrapper">
+        <img src="./assets/histo.png" alt="img nt fnd">
+        <div class="text-box">
+          <p>The foundation of us, is established all the way from the 1970s. We have more than 50 years experience of hosting events for some of the world’s biggest movers and shakers. Our premises were originally designed to accommodate 62 heads of state and their delegations for the 10th Non-Aligned Movement Summit in 1992. Since then, we have kept abreast of events and communications technology developments, delivering seamless start-to-finish service.</p>
+        </div>
+      </div>
+
+    </div>
+
+<!--   --------mark of section-------   -->
+    <div class="home1">
+      <div class="title">Present Day</div>
+      
+      <div class="wrapper">
+        <img src="./assets/ktt.png" alt="img nt fnd">
+        <div class="text-box">
+          <p>After going through tough times, we are now located in the heart of BSD City, JCC is the perfect venue for hosting a wide range of national and international scale of events. Covering a total land area of 22 hectares, the venue is designed to be one of the most spacious exhibition and convention center in Indonesia. It offers to facilitate a full spectrum of business events simultaneously additional to the core business of Meetings, Incentives, Conventions and Exhibition (MICE) industries in Indonesia. <br><br>
+            Owned and managed by PT Indonesia International Expo, a joint venture of Kompas-Gramedia Group and Sinar Mas Group, ICE aims to always achieve perfection by providing the best venue with complete facilities and excellent service. ICE offers 10 exhibition halls with a total area of 50.000 sqm and an additional 50.000 sqm outdoor exhibition space, a 4000 sqm convention hall divisible into 4 rooms, 33 meeting rooms, and a 12.000 sqm convenient pre-function lobby.</p>
+        </div>
+      </div>
+
+    </div>
+
+<!--   --------mark of section-------   -->
+    <div class="home3">
+      <div class="title">Certified By</div>
+      <div class="wrapper">
+        <img src="./assets/cer1.png" alt="">
+        <img src="./assets/cer2.png" alt="">
+        <img class="special" src="./assets/cer3.png" alt="">
+      </div>
+    </div>
+
+
+<!--   --------mark of section-------   -->
+    <div class="footer">
+
+      <div class="footLogo">
+        <img class="footer-logo" src="./assets/foot1.png" alt="no">
+      </div>
+
+      <div class="nav-line">          
+      </div>
+      
+      <div class="foot-container">    
+
+        <div class="foot-menu">
+          <a href="./HOME.html" class="H">HOME</a>
+          <a href="./EVENTS.html" class="E">EVENTS</a>
+          <a href="./PRICELIST.html" class="P">PRICE LIST</a>
+          <a href="./ABOUT.html" class="A">ABOUT US</a>
+          <a href="./CONTACT.html" class="C">CONTACT US</a>
+        </div>
+
+        <div class="sosmed">
+          <a href="https://www.instagram.com/balaisidangjcc/" class="sm1">
+            <img src="./assets/foot2.png" alt="">
+        </a>
+          <a href="https://www.youtube.com/@jakartaconventioncenter198" class="sm2">
+              <img src="./assets/foot3.png" alt="">
+          </a>
+          <a href="https://twitter.com/balaisidangjcc" class="sm3">
+              <img src="./assets/foot4.png" alt="">
+          </a>    
+        </div>
+        
+      </div>
+      
+
+      <div class="nav-line">          
+      </div>
+
+      <div class="copyright">
+          Jockey Conference Center. Copyright 2023. Wilmer Kwodeevan.
+      </div>
+
+    </div>
+
+    <script>
+
+      // Animation
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry)
+          if(entry.isIntersecting){
+            entry.target.classList.add('show');
+          }
+          else{
+            entry.target.classList.remove('show');
+          }
+        });
+      });
+      const hiddenElements = document.querySelectorAll('.title');
+      hiddenElements.forEach((el) => observer.observe(el));
+
+      //nav bar hide when scrolling down
+      {
+        const nav = document.querySelector(".nav");
+        let lastScrollY = window.scrollY;
+  
+        window.addEventListener("scroll", () => {          
+          if(lastScrollY < window.scrollY){
+            nav.classList.add("nav--hidden");
+            // console.log("we are going down" + lastScrollY);
+          }
+          else{
+            nav.classList.remove("nav--hidden");
+            // console.log("we are going up" + lastScrollY);
+          }
+          lastScrollY = window.scrollY;
+        });
+      }
+
+    </script>
+  </body>
+</html>

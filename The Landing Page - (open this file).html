@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Splash">
+        <img class="logo" src="./Scripts, Assets, and Technical Stuffs/assets/COOL LOGO.png" alt="">
+    </div>
+
+    <style>
+        body{
+            background: black;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;   
+        }
+        #Splash{
+            background: #302A1A;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity 3s;
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+            width: 400px;
+        }
+        #Splash.fadeIn{
+            opacity: 1;
+        }
+        #Splash.fadeOut{
+            opacity: 0;
+        }
+    </style>
+
+    <script>
+        var timeout1 = setTimeout(() => {
+            document.getElementById('Splash').classList.toggle('fadeIn');
+        }, 300);
+
+        function greet(){
+            document.getElementById('Splash').classList.toggle('fadeOut');
+            setTimeout(function() {
+                location.href = './Scripts, Assets, and Technical Stuffs/HOME.html';
+            }, 2000);
+        }
+        setTimeout(greet, 3000);
+    </script>
+</body>
+</html>
